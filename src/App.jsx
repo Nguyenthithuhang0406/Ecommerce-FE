@@ -12,6 +12,10 @@ import ProductsByCategory from "./pages/productsByCategory/ProductsByCategory";
 import FollowingProducts from "./pages/followingProducts/FollowingProducts";
 import Order from "./pages/order/Order";
 
+import BlogLayout from "./components/commons/blogs/BlogLayout";
+import "./App.css";
+import ContactPage from "./pages/contact/ContactPage";
+import MarketSystemPage from "./pages/market-system/MarketSystemPage";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -52,6 +56,18 @@ const App = () => {
     {
       path: "/order",
       element: <Order/>,
+    },
+    {
+      path: "/contact",
+      element: <ContactPage/>
+    },
+    {
+      path: "/market-system",
+      element: <MarketSystemPage/>
+    },
+    {
+      path: "/blog",
+      element:<BlogLayout/>
     }
   ]);
   return <>{routes}</>;
