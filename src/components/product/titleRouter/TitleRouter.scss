@@ -1,0 +1,30 @@
+.title-router{
+  width: 100%;
+  padding: 20px 130px;
+
+  .title__home{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    
+    &:hover{
+      color: #fd8f7c;
+    }
+  }
+
+  .title_router{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff6347;
+    cursor: pointer;
+
+    &:hover{
+      color: #fd8f7c;
+    }
+  }
+
+  @media screen and (max-width: 767.98px){
+    padding: 20px 20px;
+  }
+}

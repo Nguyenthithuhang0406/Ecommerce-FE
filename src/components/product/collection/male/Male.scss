@@ -1,0 +1,223 @@
+.male {
+  padding: 30px 10%;
+
+  .advertisement {
+    width: 100%;
+    display: flex;
+    height: 650px;
+    gap: 30px;
+    justify-content: space-between;
+
+    .advertise_left {
+      width: 43%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .advertise_right {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .advertise_top-right {
+        width: 100%;
+        height: 48%;
+        cursor: pointer;
+      }
+
+      .advertise_bottom-right {
+        width: 100%;
+        height: 48%;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 48%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    @media screen and (max-width: 991.98px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column;
+      height: 1300px;
+      gap: 20px;
+
+      .advertise_left {
+        width: 100%;
+        height: 50%;
+      }
+
+      .advertise_right {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
+
+    @media screen and (max-width: 544.98px) {
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 399.98px) {
+      height: 800px;
+    }
+  }
+
+  .male__list {
+    margin-top: 50px;
+    width: 100%;
+
+    .male_container {
+      margin-top: 50px;
+      width: 100%;
+      height: 650px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 30px;
+
+      .male_product {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        .male_swiper {
+          width: 100%;
+          height: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .swiper-button {
+            padding: 4px;
+            background-color: #ebe8e8;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: none;
+
+            .swiper-icon {
+              width: 20px;
+              height: 20px;
+              color: #ff6347;
+            }
+
+            &:hover {
+              background-color: #ff6347;
+
+              .swiper-icon {
+                color: #fff;
+              }
+            }
+          }
+
+          .swiper-button_disabled {
+            background-color: #f4f3f3;
+            opacity: 50%;
+          }
+
+          .swiper-male__list {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .swiper-male__item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .male_product__button{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+
+          button{
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: none;
+            background-color: #ff6347;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+              background-color: #ff7f50;
+            }
+          }
+        }
+      }
+
+      .male_image {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+
+      @media screen and (max-width: 1280.98px) {
+        height: 550px;
+        
+        .male_product{
+          .male_product__button{
+            margin-top: 20px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1040.98px) {
+        flex-direction: column;
+        height: 100%;
+
+        .male_product {
+          width: 100%;
+          height: 50%;
+          margin-top: 0;
+        }
+
+        .male_image {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    padding: 30px 5%;
+  }
+}

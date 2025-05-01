@@ -1,0 +1,59 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #ff6347;
+    font-size: 30px;
+    font-weight: 1000;
+
+    .line {
+      display: block;
+      flex: 1;
+      height: 3px;
+      background-color: #ff6347;
+      position: relative;
+    }
+
+    .line-left::after,
+    .line-right::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: -8px;
+      background-color: #ff6347;
+      transform: rotate(45deg);
+    }
+
+    .line-left::after {
+      right: -5px; // Hình thoi bên phải của dòng trái
+    }
+
+    .line-right::before {
+      left: -5px; // Hình thoi bên trái của dòng phải
+    }
+
+    @media screen and (max-width: 499.98px) {
+      font-size: 25px;
+      gap: 20px;
+      .line {
+        height: 2px;
+      }
+
+      .line-left::after,
+      .line-right::before {
+        width: 10px;
+        height: 10px;
+        top: -4px;
+      }
+    }
+
+    @media screen and (max-width: 344.98px) {
+      font-size: 20px;
+      gap: 20px;
+      .line {
+        display: none;
+      }
+    }
+  }

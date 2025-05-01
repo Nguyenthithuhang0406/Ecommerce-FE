@@ -1,0 +1,94 @@
+.discounted-product {
+  width: 100%;
+  padding: 100px 10%;
+  background-image: url("https://bizweb.dktcdn.net/100/534/571/themes/972900/assets/bg-flash-sale.jpg?1735139321674");
+  .discounted-product__title {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffe8d8;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .swiper-button {
+    padding: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+
+    .swiper-icon {
+      width: 20px;
+      height: 20px;
+      color: #ff6347;
+    }
+  }
+
+  .swiper-button_disabled {
+    background-color: #d9d9d9;
+    opacity: 50%;
+  }
+
+  .swiper-discounted-product {
+    width: 100%;
+    // position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .swiper-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .swiper-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 558.98px) {
+        display: flex;
+        justify-content: center;
+
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .discounted-product__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .discounted-product__btn {
+      padding: 10px 20px;
+      background-color: #fcf2bf;
+      color: #ff6347;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover {
+        background-color: #f9f2cd;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    padding: 100px 5%;
+  }
+}
