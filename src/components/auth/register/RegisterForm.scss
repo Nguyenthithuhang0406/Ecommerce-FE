@@ -1,0 +1,136 @@
+.register {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  position: absolute;
+
+  h1 {
+    font-weight: 800px;
+    font-size: 40px;
+    color: #ff6347;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .register-form {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .register-form_item {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .register-form_title {
+        font-size: 15px;
+        color: #530e02;
+      }
+
+      .register-form_input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #530e02;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        &:focus {
+          outline: none;
+          border: 1px solid rgb(92, 92, 251);
+        }
+      }
+    }
+    .password {
+      position: relative;
+
+      .eye {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        cursor: pointer;
+        transform: translateY(-50%);
+        font-size: 17px;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      background-color: #ff6347;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e5533d;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      color: #530e02;
+      text-align: center;
+      margin-top: 20px;
+
+      span {
+        color: #ff6347;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+          color: #530e02;
+        }
+      }
+    }
+
+    .login-gg {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        background-color: #fff;
+        color: #530e02;
+        border: 1px solid #530e02;
+        border-radius: 12px;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0px 20px;
+
+        &:hover {
+          background-color: #598dee;
+          border: none;
+
+          p {
+            color: #fff;
+          }
+        }
+
+        p {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

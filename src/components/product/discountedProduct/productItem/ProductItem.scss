@@ -1,0 +1,217 @@
+.product-item {
+  width: 270px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  cursor: pointer;
+
+  .product-item_discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    background-color: #ff6347;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .product-item_following {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateX(30px);
+    visibility: hidden;
+    transition:
+      opacity 0.4s ease-in-out,
+      transform 0.4s ease-in-out,
+      visibility 0.4s;
+  }
+
+  .active {
+    background-color: #ff6347;
+    color: #ffffff;
+  }
+
+  .product-item_img {
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+      transform: scale(1.2);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  .product-item_add-to-card {
+    position: absolute;
+    top: 240px;
+    left: 10%;
+    width: 80%;
+    z-index: 10;
+    background-color: #ffffff;
+    border: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateY(30px);
+    visibility: hidden;
+    transition:
+      opacity 0.4s ease-in-out,
+      transform 0.4s ease-in-out,
+      visibility 0.4s;
+
+    &:hover {
+      background-color: #ff6347;
+      color: #ffffff;
+    }
+  }
+
+  .product-item_img-list {
+    position: absolute;
+    top: 330px;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    align-items: center;
+    z-index: 10;
+
+    .product-item_img-list-item {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: 1px;
+      border: 1px solid #d9d9d9;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .active {
+      border: 1px solid #ff6347;
+    }
+  }
+  .product-item_name {
+    position: absolute;
+    top: 370px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .product-item_sold {
+    position: absolute;
+    bottom: 60px;
+    padding: 0 20px;
+    font-size: 15px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .product-item_price {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .product-item_price-fake {
+      color: #ff6347;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .product-item_price-real {
+      text-decoration: line-through;
+      font-size: 15px;
+      font-weight: 500;
+      color: #cdcbcb;
+    }
+  }
+
+  &:hover {
+    // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    .product-item_following {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+
+      &:hover {
+        background-color: #ff6347;
+        color: #ffffff;
+      }
+    }
+
+    .product-item_add-to-card {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    .product-item_img {
+      img {
+        transform: scale(1);
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1280.98px) {
+    width: 217px;
+    height: 451px;
+
+    .product-item_img {
+      height: 286px;
+    }
+
+    .product-item_img-list {
+      top: 295px;
+    }
+
+    .product-item_name {
+      top: 330px;
+    }
+  }
+}

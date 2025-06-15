@@ -1,0 +1,43 @@
+.no-login{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  position: absolute;
+
+  h1{
+    font-weight: 800px;
+    font-size: 40px;
+    color: #ff6347;
+    text-align: center;
+  }
+
+  p{
+    font-size: 20px;
+    color: #530e02;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .no-login_btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    button{
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #e5533d;
+      }
+    }
+  }
+}

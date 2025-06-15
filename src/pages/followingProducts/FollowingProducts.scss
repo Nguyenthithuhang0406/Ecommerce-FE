@@ -1,0 +1,21 @@
+.following-products-empty{
+  padding: 0 10%;
+  height: 40vh;
+  @media screen and (max-width: 767.98px) {
+    padding: 0 5%;
+  }
+}
+.following-products {
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  // justify-content: space-between;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    padding: 0 5%;
+  }
+}
