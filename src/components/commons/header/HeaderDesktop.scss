@@ -1,0 +1,205 @@
+.header-desktop {
+  width: 100%;
+  padding: 11px 130px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  .header-desktop__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+
+    .header-desktop__logo {
+      font-size: 50px;
+      text-align: center;
+      cursor: pointer;
+      .header-desktop-logo_first {
+        // margin-right: 10px;
+        color: black;
+      }
+      .header-desktop-logo_second {
+        color: #ff6347;
+      }
+    }
+
+    .header-desktop__search-input {
+      position: relative;
+      width: 40%;
+      align-items: center;
+      height: 50px;
+
+      .header-desktop__search-input-button {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: #ff6347;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        &:hover {
+          background-color: #fd8f7c;
+        }
+
+        .header-desktop__search-input-icon1 {
+          width: 18px;
+          height: 18px;
+          font-weight: 1000;
+        }
+      }
+
+      .header-desktop__search-input-file-label {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+
+        .header-desktop__search-input-file {
+          display: none;
+        }
+        .header-desktop__search-input-icon2 {
+          width: 100%;
+          height: 100%;
+          color: #ff6347;
+          cursor: pointer;
+
+          &:hover {
+            color: #fd8f7c;
+          }
+        }
+      }
+
+      .header-desktop__search-i {
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        background-color: #f5f3f3;
+        outline: none;
+        padding: 0 50px;
+      }
+    }
+
+    .header-desktop__group-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+
+      .header-desktop__group-icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          color: #ff6347;
+
+          .header-desktop_group-i {
+            color: #ff6347;
+          }
+        }
+
+        .header-desktop_group-i {
+          width: 30px;
+          height: 30px;
+          color: #ff6347;
+        }
+
+        .header-desktop_group-p {
+          font-size: 15px;
+        }
+      }
+
+       .header-desktop__group-icon-item-child {
+          display: block;
+          position: absolute;
+          top: 60px;
+          left: 30%;
+          background-color: #f3f2f2;
+          border-radius: 8px;
+          z-index: 10;
+          width: 150px;
+
+          p {
+            width: 100%;
+            height: 30px;
+            padding: 0 20px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            text-align: left !important;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #fdfbfb;
+              color: #ff6347;
+            }
+          }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .header-desktop {
+    .header-desktop__search {
+      .header-desktop__search-input {
+        width: 50%;
+      }
+      .header-desktop__group-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header-desktop {
+    padding: 11px 20px !important;
+    .header-desktop__search {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .header-desktop__search-input {
+        width: 70%;
+      }
+
+      .header-desktop__group-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 444.98px) {
+  .header-desktop {
+    padding: 11px 20px !important;
+    .header-desktop__search {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .header-desktop__search-input {
+        width: 100%;
+      }
+
+      .header-desktop__group-icon {
+        display: none;
+      }
+    }
+  }
+}

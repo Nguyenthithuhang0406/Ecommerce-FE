@@ -1,0 +1,106 @@
+.menuSidebar{
+  width: 25%;
+
+  &__category{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dad9d9;
+    border-radius: 5px;
+
+    h1{
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    &-item{
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      color: black;
+
+      p{
+        cursor: pointer;
+        &:hover{
+          color: #ff6347;
+        }
+      }
+
+      .icon-up{
+        font-size: 20px;
+        color: #ff6347;
+        cursor: pointer;
+      }
+
+      .icon-down{
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+      }
+    }
+
+    &-item-child{
+      width: 100%;
+
+      p{
+        width: 100%;
+        font-size: 15px;
+        color: black;
+        height: 30px;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &:hover{
+          color: #ff6347;
+        }
+      }
+    }
+  }
+
+  &__price{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &-header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      p{
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+      }
+
+      .icon{
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    &-item{
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: black;
+
+      input{
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    display: none;
+  }
+}

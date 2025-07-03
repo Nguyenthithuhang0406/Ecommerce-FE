@@ -1,0 +1,36 @@
+.voucher {
+  width: 100%;
+  padding: 0px 10%;
+
+  .swiper-voucher {
+    padding: 50px 0;
+
+    .swiper-voucher__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .swiper-voucher__item {
+        width: 195px;
+        height: 142px;
+
+        .swiper-voucher__item-content {
+          width: 100%;
+          height: 100%;
+
+          .swiper-voucher__item-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    padding: 0px 5%;
+  }
+}
